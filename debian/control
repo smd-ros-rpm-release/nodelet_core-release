@@ -1,0 +1,12 @@
+Source: ros-hydro-nodelet
+Section: misc
+Priority: extra
+Maintainer: Tully Foote <tfoote@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), libboost-all-dev, libtinyxml-dev, ros-hydro-bondcpp, ros-hydro-catkin, ros-hydro-message-generation, ros-hydro-pluginlib, ros-hydro-rosconsole, ros-hydro-roscpp, ros-hydro-rospy, ros-hydro-std-msgs, uuid-dev
+Homepage: http://ros.org/wiki/nodelet
+Standards-Version: 3.9.2
+
+Package: ros-hydro-nodelet
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libtinyxml-dev, ros-hydro-bondcpp, ros-hydro-message-runtime, ros-hydro-rosconsole, ros-hydro-roscpp, ros-hydro-std-msgs, uuid-dev
+Description: The nodelet package is designed to provide a way to run multiple algorithms in the same process with zero copy transport between algorithms. This package provides both the nodelet base class needed for implementing a nodelet, as well as the NodeletLoader class used for instantiating nodelets.
