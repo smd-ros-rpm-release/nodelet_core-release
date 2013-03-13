@@ -1,0 +1,12 @@
+Source: ros-hydro-nodelet-core
+Section: misc
+Priority: extra
+Maintainer: Tully Foote <tfoote@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://www.ros.org/wiki/nodelet_core
+Standards-Version: 3.9.2
+
+Package: ros-hydro-nodelet-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-nodelet, ros-hydro-nodelet-topic-tools
+Description: Nodelet Core Metapackage
