@@ -1,0 +1,12 @@
+Source: ros-hydro-test-nodelet
+Section: misc
+Priority: extra
+Maintainer: "Tully Foote <tfoote@osrfoundation.org>"
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin (>= 0.5.68), ros-hydro-nodelet, ros-hydro-pluginlib, ros-hydro-rostest, ros-hydro-std-msgs
+Homepage: http://ros.org/wiki/test_nodelet
+Standards-Version: 3.9.2
+
+Package: ros-hydro-test-nodelet
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-nodelet, ros-hydro-pluginlib, ros-hydro-rostest, ros-hydro-std-msgs
+Description: A package for nodelet unit tests
