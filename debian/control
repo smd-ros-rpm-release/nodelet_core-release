@@ -1,0 +1,12 @@
+Source: ros-hydro-test-nodelet-topic-tools
+Section: misc
+Priority: extra
+Maintainer: "Tully Foote <tfoote@osrfoundation.org>"
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin (>= 0.5.68), ros-hydro-message-filters, ros-hydro-nodelet, ros-hydro-nodelet-topic-tools, ros-hydro-pluginlib, ros-hydro-roscpp, ros-hydro-rostest, ros-hydro-std-msgs
+Homepage: http://ros.org/wiki/nodelet_topic_tools
+Standards-Version: 3.9.2
+
+Package: ros-hydro-test-nodelet-topic-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-message-filters, ros-hydro-nodelet, ros-hydro-nodelet-topic-tools, ros-hydro-pluginlib, ros-hydro-roscpp, ros-hydro-std-msgs
+Description: A package for nodelet_topic_tools unit tests.
