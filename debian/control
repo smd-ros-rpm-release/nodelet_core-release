@@ -1,0 +1,12 @@
+Source: ros-hydro-nodelet-topic-tools
+Section: misc
+Priority: extra
+Maintainer: "Tully Foote <tfoote@osrfoundation.org>"
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-dynamic-reconfigure
+Homepage: http://ros.org/wiki/nodelet_topic_tools
+Standards-Version: 3.9.2
+
+Package: ros-hydro-nodelet-topic-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-dynamic-reconfigure, ros-hydro-message-filters, ros-hydro-nodelet, ros-hydro-pluginlib, ros-hydro-roscpp
+Description: This package contains common nodelet tools such as a mux, demux and throttle.
