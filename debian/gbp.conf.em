@@ -1,3 +1,3 @@
 [git-buildpackage]
-upstream-branch=release/nodelet/1.7.14
+upstream-branch=@(release_tag)
 upstream-tree=branch
