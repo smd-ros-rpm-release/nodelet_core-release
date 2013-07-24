@@ -31,7 +31,7 @@ generate_messages(DEPENDENCIES std_msgs)
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES nodeletlib uuid
-  CATKIN_DEPENDS bondcpp message_runtime rosconsole roscpp std_msgs
+  CATKIN_DEPENDS bondcpp message_runtime pluginlib rosconsole roscpp std_msgs
   DEPENDS Boost
 )
 
@@ -40,7 +40,7 @@ catkin_package(
 
 add_library(nodeletlib src/nodelet_class.cpp src/loader.cpp src/callback_queue.cpp src/callback_queue_manager.cpp)
 target_link_libraries(nodeletlib ${catkin_LIBRARIES} ${BOOST_LIBRARIES})
-add_dependencies(nodeletlib ${PROJECT_NAME}_gencpp)
+add_dependencies(nodeletlib ${nodelet_EXPORTED_TARGETS})
 
 add_executable(nodelet src/nodelet.cpp)
 target_link_libraries(nodelet nodeletlib uuid ${catkin_LIBRARIES} ${BOOST_LIBRARIES})
@@ -55,7 +55,9 @@ install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
 install(TARGETS nodeletlib
-        DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 )
 install(TARGETS nodelet
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
