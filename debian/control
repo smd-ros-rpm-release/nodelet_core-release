@@ -1,0 +1,12 @@
+Source: ros-groovy-test-nodelet-topic-tools
+Section: misc
+Priority: extra
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-catkin (>= 0.5.68), ros-groovy-message-filters, ros-groovy-nodelet, ros-groovy-nodelet-topic-tools, ros-groovy-pluginlib, ros-groovy-roscpp, ros-groovy-rostest, ros-groovy-std-msgs
+Homepage: http://ros.org/wiki/nodelet_topic_tools
+Standards-Version: 3.9.2
+
+Package: ros-groovy-test-nodelet-topic-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-message-filters, ros-groovy-nodelet, ros-groovy-nodelet-topic-tools, ros-groovy-pluginlib, ros-groovy-roscpp, ros-groovy-std-msgs
+Description: A package for nodelet_topic_tools unit tests.
