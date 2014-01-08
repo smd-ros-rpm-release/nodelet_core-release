@@ -2,6 +2,9 @@
 Changelog for package nodelet_topic_tools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.8.2 (2014-01-07)
+------------------
+
 1.8.0 (2013-07-11)
 ------------------
 * update email in package.xml
