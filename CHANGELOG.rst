@@ -2,6 +2,10 @@
 Changelog for package nodelet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.8.2 (2014-01-07)
+------------------
+* fix erasing bond when it breaks (`#8 <https://github.com/ros/nodelet_core/issues/8>`_)
+
 1.8.0 (2013-07-11)
 ------------------
 * add missing archive/library/runtime destination for library
