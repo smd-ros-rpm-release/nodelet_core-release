@@ -1,3 +1,29 @@
+## nodelet_core (hydro) - 1.8.4-0
+
+The packages in the `nodelet_core` repository were released into the `hydro` distro by running `/usr/bin/bloom-release nodelet_core -e -t hydro -r hydro` on `Mon, 16 Jun 2014 16:22:47 -0000`
+
+These packages were released:
+- `nodelet`
+- `nodelet_core`
+- `nodelet_topic_tools`
+
+These packages were explicitly ignored:
+- `test_nodelet`
+- `test_nodelet_topic_tools`
+
+Version of package(s) in repository `nodelet_core`:
+- rosdistro version: `1.8.2-0`
+- old version: `1.8.2-0`
+- new version: `1.8.4-0`
+
+Versions of tools used:
+- bloom version: `0.5.9`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## nodelet_core (indigo) - 1.9.0-0
 
 The packages in the `nodelet_core` repository were released into the `indigo` distro by running `/usr/bin/bloom-release nodelet_core -t indigo -r indigo` on `Mon, 16 Jun 2014 10:24:10 -0000`
